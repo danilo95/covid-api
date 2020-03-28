@@ -123,7 +123,8 @@ export default class Sumary extends Component {
 				title: 'Pais',
 				dataIndex: 'Country',
 				key: 'Country',
-				...this.getColumnSearchProps('Country')
+				...this.getColumnSearchProps('Country'),
+				render: text => <b>{text == 'US' ? 'United States' : text}</b>
 			},
 			{
 				title: 'Casos Confirmados',
