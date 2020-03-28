@@ -155,14 +155,6 @@ export default class Sumary extends Component {
 					width: '100%'
 				}}
 			>
-				<div
-					style={{
-						width: '100%',
-						height: 30,
-						backgroundColor: 'white',
-						display: 'flex'
-					}}
-				></div>
 				<Table
 					style={{ cursor: 'pointer' }}
 					loading={countries ? false : true}
